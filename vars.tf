@@ -1,4 +1,12 @@
-#FLEXIBLE_ENGINE_ACCESS_KEY = ""
-#FLEXIBLE_ENGINE_SECRET_KEY = ""
-#DOMAIN_NAME = ""
-#USERNAME = ""
+variable FLEXIBLE_ENGINE_ACCESS_KEY{
+  default = ""
+}
+variable FLEXIBLE_ENGINE_SECRET_KEY{
+  default = ""
+}
+variable DOMAIN_NAME {
+  default = ""
+}
+variable USERNAME {
+  default = ""
+}
