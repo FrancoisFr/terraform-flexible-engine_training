@@ -5,7 +5,7 @@ resource "flexibleengine_compute_instance_v2" "basic" {
   security_groups = ["default"]
 
   network {
-    uuid = var.subnet_id
+    uuid = flexibleengine_networking_subnet_v2.subnet_1.id
 
   }
 }
