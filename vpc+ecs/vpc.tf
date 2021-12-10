@@ -3,9 +3,9 @@ resource "flexibleengine_vpc_v1" "vpc_test" {
   cidr = "192.168.0.0/16"
 }
 
-resource "flexibleengine_networking_subnet_v2" "subnet_1" {
+resource "flexibleengine_vpc_subnet_v1" "subnet_1" {
   name       = "subnet_1"
-  network_id = flexibleengine_vpc_v1.vpc_test.id
-  cidr       = "192.168.199.0/24"
-  ip_version = 4
+  vpc_id     = flexibleengine_vpc_v1.vpc_test.id
+  cidr       = "192.168.0.0/24"
+  gateway_ip = "192.168.0.1"
 }
