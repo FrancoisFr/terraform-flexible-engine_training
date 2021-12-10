@@ -18,6 +18,6 @@ Note: Nécessite d'utiliser les subnet_v1, les v2 ne sont pas du tout compatible
 
 <b>Step 3 : multiples instances</b>
 
-Step 3: créer plusieurs subnet avec une instance par subnet
+Step 3: créer plusieurs subnet avec une instance par subnet et tagger chaque instance afin qu'on sache qui l'a déployé
 
-statut : A faire
+statut : OK
