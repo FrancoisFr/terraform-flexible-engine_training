@@ -24,6 +24,14 @@ Statut : OK
 
 <b>Step 4 : NAT Gateway + Routing</b>
 
-Step 4 : Créer une NAT gateway pour le subnet qui sera publique et une NAT Gateway pour permettre au réseau privé de communiquer avec le réseau publique
+Step 4 : Créer une NAT gateway pour le VPC avec DNAT et SNAT pour permettre le traffic + un groupe de sécurité avec les règles du trafic
+
+Statut : Ok
+
+Step 5 : Container
+
+Recréer a même infra en se basant sur des container plutôt que des VM
 
 Statut : A faire
+
+
