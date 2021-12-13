@@ -5,7 +5,7 @@ resource "flexibleengine_compute_instance_v2" "instance1-step4" {
   security_groups = ["default"]
 
   network {
-    uuid = flexibleengine_vpc_subnet_v1.subnet_1.id
+    uuid = flexibleengine_vpc_subnet_v1.subnet_public.id
 
   }
 
@@ -22,7 +22,7 @@ resource "flexibleengine_compute_instance_v2" "instance2-step4" {
   security_groups = ["default"]
 
   network {
-    uuid = flexibleengine_vpc_subnet_v1.subnet_2.id
+    uuid = flexibleengine_vpc_subnet_v1.subnet_private.id
 
   }
 
