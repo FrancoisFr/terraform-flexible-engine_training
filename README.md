@@ -28,10 +28,8 @@ Step 4 : Créer une NAT gateway pour le VPC avec DNAT et SNAT pour permettre le 
 
 Statut : Ok
 
-Step 5 : Container
+<b>Step 5 : Auto-scaling</b>
 
-Recréer a même infra en se basant sur des container plutôt que des VM
+Step 5 : Mettre en place de l'auto-scaling d'instance
 
 Statut : A faire
-
-
