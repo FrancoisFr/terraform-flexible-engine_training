@@ -9,4 +9,4 @@ variable "tag_Custom" {
     Project    = "Training"
   }
 }
-variable "flavor" {  default = "s3.small.1" }
+variable "flavor" { default = "s3.small.1" }

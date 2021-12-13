@@ -30,6 +30,6 @@ Statut : Ok
 
 <b>Step 5 : Auto-scaling</b>
 
-Step 5 : Mettre en place de l'auto-scaling d'instance
+Step 5 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
 
 Statut : A faire
