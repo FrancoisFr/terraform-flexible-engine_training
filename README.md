@@ -6,13 +6,13 @@ Repo contenant mes différentes tentatives pour prendre en main terraform pour F
 
 Première tentative, le but était de créer une instance ecs de base
 
-statut : OK
+Statut : OK
 
 <b>Step 2 : VPC + ecs</b>
 
 Step 2 : tenter de créer également le VPC et les subnets depuis terraform ( la ou step 1 ne créé qu'une instance ECS dans un VPC déjà existant)
 
-statut : OK
+Statut : OK
 
 Note: Nécessite d'utiliser les subnet_v1, les v2 ne sont pas du tout compatible avec les vpc_v1 créer (pas de v2 pour cette ressource de ce que j'ai pu voir)
 
@@ -20,4 +20,10 @@ Note: Nécessite d'utiliser les subnet_v1, les v2 ne sont pas du tout compatible
 
 Step 3: créer plusieurs subnet avec une instance par subnet et tagger chaque instance afin qu'on sache qui l'a déployé
 
-statut : OK
+Statut : OK
+
+<b>Step 4 : NAT Gateway + Routing</b>
+
+Step 4 : Créer une NAT gateway pour le subnet qui sera publique et une NAT Gateway pour permettre au réseau privé de communiquer avec le réseau publique
+
+Statut : A faire
