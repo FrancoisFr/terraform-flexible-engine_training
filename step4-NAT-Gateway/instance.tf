@@ -9,10 +9,8 @@ resource "flexibleengine_compute_instance_v2" "instance1-step4" {
 
   }
 
-  tags = {
-    Owner_Name = var.tag_OwnerName
-    Project    = "Training"
-  }
+  tags = var.tag_Custom
+
 }
 
 resource "flexibleengine_compute_instance_v2" "instance2-step4" {
@@ -26,9 +24,6 @@ resource "flexibleengine_compute_instance_v2" "instance2-step4" {
 
   }
 
-  tags = {
-    Owner_Name = var.tag_OwnerName
-    Project    = "Training"
-  }
+  tags = var.tag_Custom
 
 }
