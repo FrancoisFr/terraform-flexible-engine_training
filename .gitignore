@@ -6,7 +6,6 @@
 *.tfstate.*
 
 # tfvars file
-**/*.tfvars
 
 # plan file
 **/file_plan
