@@ -8,6 +8,13 @@
 # tfvars file
 **/*.tfvars
 
+# plan file
+**/file_plan
+
+# lock file
+**/*.lock.*
+
+
 # Crash log files
 crash.log
 
