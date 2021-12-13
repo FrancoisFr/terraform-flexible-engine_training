@@ -1,7 +1,11 @@
+#Création d'un VPC
+
 resource "flexibleengine_vpc_v1" "vpc_test" {
   name = "vpc_test_via_terraform-francois"
   cidr = "192.168.0.0/16"
 }
+
+# Création des différents subnets
 
 resource "flexibleengine_vpc_subnet_v1" "subnet_public" {
   name       = "subnet_public"
@@ -16,6 +20,8 @@ resource "flexibleengine_vpc_subnet_v1" "subnet_private" {
   cidr       = "192.168.1.0/24"
   gateway_ip = "192.168.1.1"
 }
+
+#Création d'EIP
 
 resource "flexibleengine_vpc_eip_v1" "eip_SNAT" {
   publicip {

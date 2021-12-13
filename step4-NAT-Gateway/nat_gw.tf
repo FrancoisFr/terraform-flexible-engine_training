@@ -6,13 +6,6 @@ resource "flexibleengine_nat_gateway_v2" "nat_public" {
   subnet_id   = flexibleengine_vpc_subnet_v1.subnet_public.id
 }
 
-resource "flexibleengine_nat_gateway_v2" "nat_private" {
-  name        = "nat_test_private"
-  description = "test for terraform"
-  spec        = "1"
-  vpc_id      = flexibleengine_vpc_v1.vpc_test.id
-  subnet_id   = flexibleengine_vpc_subnet_v1.subnet_private.id
-}
 
 resource "flexibleengine_nat_snat_rule_v2" "snat_public" {
   nat_gateway_id = flexibleengine_nat_gateway_v2.nat_public.id
