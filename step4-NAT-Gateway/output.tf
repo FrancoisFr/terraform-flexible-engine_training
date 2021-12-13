@@ -13,4 +13,6 @@ output "SUBNET_ID-1" {
 output "SUBNET-ID-2" {
   value = flexibleengine_vpc_subnet_v1.subnet_2.id
 }
-
+output "EIP_1" {
+  value = flexibleengine_vpc_eip_v1.eip_1.address
+}

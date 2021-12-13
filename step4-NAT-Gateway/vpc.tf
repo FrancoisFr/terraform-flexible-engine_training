@@ -17,3 +17,19 @@ resource "flexibleengine_vpc_subnet_v1" "subnet_2" {
   gateway_ip = "192.168.1.1"
 }
 
+resource "flexibleengine_vpc_eip_v1" "eip_1" {
+  publicip {
+    type = "5_bgp"
+  }
+  bandwidth {
+    name = "bandwidth_test"
+    size = 1
+    share_type = "PER"
+  }
+
+  tags = {
+    Owner_Name = var.tag_OwnerName
+    Project = "Training"
+  }
+
+}
