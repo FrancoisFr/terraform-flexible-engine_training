@@ -5,7 +5,8 @@
 *.tfstate
 *.tfstate.*
 
-# tfvars file
+# key
+**/key-as*
 
 # plan file
 **/file_plan
