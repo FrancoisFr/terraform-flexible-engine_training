@@ -32,4 +32,10 @@ Statut : Ok
 
 Step 5 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
 
+Statut : OK
+
+<b>Step 6 : Cloud Container Engine</b>
+
+Step 6 : Mettre en place un cluster avec CCE.
+
 Statut : A faire
