@@ -8,9 +8,10 @@ resource "flexibleengine_compute_instance_v2" "instance1-step3" {
     uuid = flexibleengine_vpc_subnet_v1.subnet_1.id
 
   }
-    
+
   tags = {
-    Owner_Name  = var.tag_OwnerName
+    Owner_Name = var.tag_OwnerName
+    Project = "Training"
   }
 }
 
@@ -26,8 +27,8 @@ resource "flexibleengine_compute_instance_v2" "instance2-step3" {
   }
 
   tags = {
-    Owner_Name  = var.tag_OwnerName
+    Owner_Name = var.tag_OwnerName
+    Project = "Training"
   }
 
 }
-
