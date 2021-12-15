@@ -9,4 +9,6 @@ variable "tag_Custom" {
     Project    = "Training"
   }
 }
-variable "flavor" { default = "cce.s1.small" }
+variable "flavor" { default = "s3.large.2" }
+variable availability_zone { default = "AZ1"  }
+variable ssh_key {  default = "key-as" }
