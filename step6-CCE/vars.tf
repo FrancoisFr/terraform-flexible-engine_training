@@ -10,5 +10,6 @@ variable "tag_Custom" {
   }
 }
 variable "flavor" { default = "s3.large.2" }
-variable availability_zone { default = "AZ1"  }
-variable ssh_key {  default = "key-as" }
+variable "cluster_flavor" {  default = "cce.s1.small" }
+variable "availability_zone" { default = "AZ1" }
+variable "ssh_key" { default = "key-as" }
