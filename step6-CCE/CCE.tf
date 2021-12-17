@@ -12,12 +12,14 @@ resource "flexibleengine_cce_cluster_v3" "clustertest" {
 resource "flexibleengine_cce_node_v3" "node_1" {
   cluster_id        = flexibleengine_cce_cluster_v3.clustertest.id
   name              = "node1"
-  flavor_id         = "s1.medium"
+  flavor_id         = var.flavor
   availability_zone = var.availability_zone
   key_pair          = var.ssh_key
   iptype            = "5_bgp"
   sharetype         = "PER"
   bandwidth_size    = 100
+  os                = "CentOS 7.7"
+
 
   root_volume {
     size       = 40
@@ -27,4 +29,6 @@ resource "flexibleengine_cce_node_v3" "node_1" {
     size       = 100
     volumetype = "SATA"
   }
+
+  tags = var.tag_Custom
 }
