@@ -38,4 +38,6 @@ Statut : OK
 
 Step 6 : Mettre en place un cluster avec CCE.
 
-Statut : A faire
+Statut : Le cluster est créer, ajout d'un node possible mais kubelet, kubectl etc... pas présent sur la machine.
+
+Fix possible: ajout d'un script d'installation dans terraform, à faire jouer pendant la création du node.
