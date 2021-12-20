@@ -22,6 +22,7 @@ resource "flexibleengine_cce_node_v3" "node_1" {
   sharetype         = "PER"
   bandwidth_size    = 100
   os                = "CentOS 7.7"
+  preinstall        = "scripts/common.sh"
 
   root_volume {
     size       = 40
