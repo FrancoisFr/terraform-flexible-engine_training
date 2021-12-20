@@ -10,12 +10,12 @@ resource "flexibleengine_vpc_subnet_v1" "subnet_cce" {
   gateway_ip = "192.168.0.1"
 }
 
-resource "flexibleengine_vpc_eip_v1" "eip_SNAT" {
+resource "flexibleengine_vpc_eip_v1" "eip_node1" {
   publicip {
     type = "5_bgp"
   }
   bandwidth {
-    name       = "bandwidth_test_OUT"
+    name       = "bandwidth_test_node1"
     size       = 1
     share_type = "PER"
   }
@@ -24,12 +24,12 @@ resource "flexibleengine_vpc_eip_v1" "eip_SNAT" {
 
 }
 
-resource "flexibleengine_vpc_eip_v1" "eip_DNAT" {
+resource "flexibleengine_vpc_eip_v1" "eip_node2" {
   publicip {
     type = "5_bgp"
   }
   bandwidth {
-    name       = "bandwidth_test_IN"
+    name       = "bandwidth_test_node2"
     size       = 1
     share_type = "PER"
   }

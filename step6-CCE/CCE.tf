@@ -10,6 +10,9 @@ resource "flexibleengine_cce_cluster_v3" "clustertest" {
 }
 
 resource "flexibleengine_cce_node_v3" "node_1" {
+  depends_on = [
+    flexibleengine_vpc_eip_v1.eip_node1
+  ]
   cluster_id        = flexibleengine_cce_cluster_v3.clustertest.id
   name              = "node1"
   flavor_id         = var.flavor
@@ -19,7 +22,6 @@ resource "flexibleengine_cce_node_v3" "node_1" {
   sharetype         = "PER"
   bandwidth_size    = 100
   os                = "CentOS 7.7"
-
 
   root_volume {
     size       = 40
