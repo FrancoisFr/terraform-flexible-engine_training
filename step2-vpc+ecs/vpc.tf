@@ -1,6 +1,8 @@
 resource "flexibleengine_vpc_v1" "vpc_test" {
   name = "vpc_test_via_terraform-francois"
   cidr = "192.168.0.0/16"
+  
+  tags = var.tag_Custom
 }
 
 resource "flexibleengine_vpc_subnet_v1" "subnet_1" {
