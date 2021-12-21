@@ -28,7 +28,7 @@ Step 4 : Créer une NAT gateway pour le VPC avec DNAT et SNAT pour permettre le 
 
 Statut : Ok
 
-<b>Step 5 : LoadBalancer</>
+<b>Step 5 : LoadBalancer</b>
   
   Step 5: Ajouter un Loadbalancer afin de gérer le traffique
 
