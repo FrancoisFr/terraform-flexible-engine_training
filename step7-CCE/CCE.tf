@@ -34,4 +34,9 @@ resource "flexibleengine_cce_node_v3" "node_1" {
   }
 
   tags = var.tag_Custom
+  
+  timeouts {
+    create = "60m"
+    delete = "2h"
+  }
 }
