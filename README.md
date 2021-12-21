@@ -22,21 +22,25 @@ Step 3: créer plusieurs subnet avec une instance par subnet et tagger chaque in
 
 Statut : OK
 
-<b>Step 4 : NAT Gateway + Routing</b>
+<b>Step 4 : NAT Gateway + SecGroup</b>
 
 Step 4 : Créer une NAT gateway pour le VPC avec DNAT et SNAT pour permettre le traffic + un groupe de sécurité avec les règles du trafic
 
 Statut : Ok
 
-<b>Step 5 : Auto-scaling</b>
+<b>Step 5 : LoadBalancer</>
+  
+  Step 5: Ajouter un Loadbalancer afin de gérer le traffique
 
-Step 5 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
+<b>Step 6 : Auto-scaling</b>
+
+Step 6 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
 
 Statut : OK
 
-<b>Step 6 : Cloud Container Engine</b>
+<b>Step 7 : Cloud Container Engine</b>
 
-Step 6 : Mettre en place un cluster avec CCE.
+Step 7 : Mettre en place un cluster avec CCE.
 
 Statut : Le cluster est créer, ajout d'un node possible mais kubelet, kubectl etc... pas présent sur la machine.
 
