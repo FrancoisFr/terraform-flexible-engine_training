@@ -8,4 +8,5 @@ resource "flexibleengine_compute_instance_v2" "basic" {
     uuid = var.subnet_id
 
   }
+  tags = vars.tag_Custom
 }
