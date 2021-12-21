@@ -15,3 +15,9 @@ variable "subnet_id" {
 variable "security_group_id" {
   default = "40ff52d9-a9f3-4ca1-863e-644220d59af3"
 }
+variable "tag_Custom" {
+  default = {
+    Owner_Name = "Francois_Richard"
+    Project    = "Training"
+  }
+}
