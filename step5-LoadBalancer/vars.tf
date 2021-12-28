@@ -9,3 +9,6 @@ variable "tag_Custom" {
     Project    = "Training"
   }
 }
+variable "subnet_id" {
+  default = "1d3473f8-2bc5-4af3-ae3b-7a2ccc80fae1"
+}
