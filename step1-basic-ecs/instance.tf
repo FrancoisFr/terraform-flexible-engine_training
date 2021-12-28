@@ -1,9 +1,9 @@
 resource "flexibleengine_compute_instance_v2" "basic" {
-  name            = "basic"
-  image_name      = "OBS CentOS 7.9"
-  flavor_id       = "s3.small.1"
+  name            = "machine-francois"
+  image_name      = var.image_name
+  flavor_id       = var.flavor_id
   security_groups = ["default"]
-
+  key_pair        = var.key_pair
   network {
     uuid = var.subnet_id
 

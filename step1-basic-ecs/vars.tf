@@ -4,7 +4,7 @@ variable "DOMAIN_NAME" {}
 variable "USERNAME" {}
 variable "DOMAIN_ID" {}
 variable "key_pair" {
-  default = "my-key"
+  default = "key_ecs"
 }
 variable "network_id" {
   default = "7f9ff1db-9bcdb-4b6e-a5a0-024683ba48d0"
@@ -20,4 +20,10 @@ variable "tag_Custom" {
     Owner_Name = "Francois_Richard"
     Project    = "Training"
   }
+}
+variable "image_name" {
+  default = "OBS Ubuntu 18.04"
+}
+variable "flavor_id" {
+  default = "s3.xlarge.2"
 }
