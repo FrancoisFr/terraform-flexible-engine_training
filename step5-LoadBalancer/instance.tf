@@ -1,5 +1,5 @@
 resource "flexibleengine_compute_instance_v2" "instance1-step3" {
-  name            = "instance1-step3"
+  name            = "petit_test"
   image_name      = "OBS CentOS 7.9"
   flavor_id       = "s3.small.1"
   security_groups = ["default"]
@@ -13,7 +13,7 @@ resource "flexibleengine_compute_instance_v2" "instance1-step3" {
 }
 
 resource "flexibleengine_compute_instance_v2" "instance2-step3" {
-  name            = "instance2-step3"
+  name            = "petit_test-2"
   image_name      = "OBS CentOS 7.9"
   flavor_id       = "s3.small.1"
   security_groups = ["default"]
