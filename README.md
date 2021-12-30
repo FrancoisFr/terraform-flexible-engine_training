@@ -4,29 +4,29 @@ Repo contenant mes différentes tentatives pour prendre en main terraform pour F
 
 <b>Step 1 : basic-ecs</b>
 
-Première tentative, le but était de créer une instance ecs de base
+  Première tentative, le but était de créer une instance ecs de base
 
-Statut : OK
+  Statut : OK
 
 <b>Step 2 : VPC + ecs</b>
 
-Step 2 : tenter de créer également le VPC et les subnets depuis terraform ( la ou step 1 ne créé qu'une instance ECS dans un VPC déjà existant)
+  Step 2 : tenter de créer également le VPC et les subnets depuis terraform ( la ou step 1 ne créé qu'une instance ECS dans un VPC déjà existant)
 
-Statut : OK
+  Statut : OK
 
-Note: Nécessite d'utiliser les subnet_v1, les v2 ne sont pas du tout compatible avec les vpc_v1 créer (pas de v2 pour cette ressource de ce que j'ai pu voir)
+  Note: Nécessite d'utiliser les subnet_v1, les v2 ne sont pas du tout compatible avec les vpc_v1 créer (pas de v2 pour cette ressource de ce que j'ai pu voir)
 
 <b>Step 3 : multiples instances</b>
 
-Step 3: créer plusieurs subnet avec une instance par subnet et tagger chaque instance afin qu'on sache qui l'a déployé
+  Step 3: créer plusieurs subnet avec une instance par subnet et tagger chaque instance afin qu'on sache qui l'a déployé
 
-Statut : OK
+  Statut : OK
 
 <b>Step 4 : NAT Gateway + SecGroup</b>
 
-Step 4 : Créer une NAT gateway pour le VPC avec DNAT et SNAT pour permettre le traffic + un groupe de sécurité avec les règles du trafic
+  Step 4 : Créer une NAT gateway pour le VPC avec DNAT et SNAT pour permettre le traffic + un groupe de sécurité avec les règles du trafic
 
-Statut : Ok
+  Statut : Ok
 
 <b>Step 5 : LoadBalancer</b>
   
@@ -36,18 +36,20 @@ Statut : Ok
 
 <b>Step 6 : Auto-scaling</b>
 
-Step 6 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
+  Step 6 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
 
-Statut : OK
+  Statut : OK
 
 <b>Step 7 : Cloud Container Engine</b>
 
-Step 7 : Mettre en place un cluster avec CCE.
+  Step 7 : Mettre en place un cluster avec CCE.
 
-Statut : Le cluster est créer, ajout d'un node possible mais kubelet, kubectl etc... pas présent sur la machine.
+  Statut : Le cluster est créer, ajout d'un node possible mais kubelet, kubectl etc... pas présent sur la machine.
 
-Fix possible: ajout d'un script d'installation dans terraform, à faire jouer pendant la création du node.
+  Fix possible: ajout d'un script d'installation dans terraform, à faire jouer pendant la création du node. (still not working)
 
 <b>Step 8 : VPC Peering</b>
 
-Step 8 : Mettre en place plusieurs VPC et du vpc peering entre eux
+  Step 8 : Mettre en place plusieurs VPC et du vpc peering entre eux
+
+  Statut : OK
