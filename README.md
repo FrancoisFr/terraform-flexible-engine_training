@@ -32,6 +32,8 @@ Statut : Ok
   
   Step 5: Ajouter un Loadbalancer afin de gérer le traffique
 
+  Statut : Not OK
+
 <b>Step 6 : Auto-scaling</b>
 
 Step 6 : Mettre en place de l'auto-scaling d'instance + policy et alarme afin de gérer le scale up et scale down du groupe
@@ -45,3 +47,7 @@ Step 7 : Mettre en place un cluster avec CCE.
 Statut : Le cluster est créer, ajout d'un node possible mais kubelet, kubectl etc... pas présent sur la machine.
 
 Fix possible: ajout d'un script d'installation dans terraform, à faire jouer pendant la création du node.
+
+<b>Step 8 : VPC Peering</b>
+
+Step 8 : Mettre en place plusieurs VPC et du vpc peering entre eux
