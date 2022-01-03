@@ -58,4 +58,4 @@ Repo contenant mes différentes tentatives pour prendre en main terraform pour F
 
   Step 9 : Créer un bucket avec versioning de mis en place
 
-  Statut : A faire
+  Statut : OK
