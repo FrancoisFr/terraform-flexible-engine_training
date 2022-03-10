@@ -4,3 +4,4 @@ DOMAIN_NAME                = "<The targeted domain name>"
 DOMAIN_ID                  = "<The targeted domain ID>"
 USERNAME                   = "<Your username>"
 
+ 
