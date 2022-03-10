@@ -1,6 +1,6 @@
-FLEXIBLE_ENGINE_ACCESS_KEY = "O8HEQDGHG52W0NHEMCOH"
-FLEXIBLE_ENGINE_SECRET_KEY = "3aJ39G3zSu1PgUUCMJaTmxgFtpSZ6FrWqkpUFDGg"
-DOMAIN_NAME                = "OCB0001677"
-DOMAIN_ID                  = "851f5c15b6464bf287c34e450aca47dc"
-USERNAME                   = "francois.richard"
+FLEXIBLE_ENGINE_ACCESS_KEY = "<Your FE Access key>"
+FLEXIBLE_ENGINE_SECRET_KEY = "<Your FE Secret key>"
+DOMAIN_NAME                = "<The targeted domain name>"
+DOMAIN_ID                  = "<The targeted domain ID>"
+USERNAME                   = "<Your username>"
 
