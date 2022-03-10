@@ -4,7 +4,7 @@ variable "DOMAIN_NAME" {}
 variable "USERNAME" {}
 variable "DOMAIN_ID" {}
 variable "key_pair" {
-  default = "key_ecs"
+  default = "KeyPair-test_linux"
 }
 variable "network_id" {
   default = "7f9ff1db-9bcdb-4b6e-a5a0-024683ba48d0"
@@ -22,8 +22,11 @@ variable "tag_Custom" {
   }
 }
 variable "image_name" {
-  default = "OBS Ubuntu 18.04"
+  default = "OBS Ubuntu 20.04"
 }
 variable "flavor_id" {
   default = "s3.xlarge.2"
+}
+variable "nat_gw_id" {
+  default = "6e51a628-0fb9-43df-9081-02b34181d12f"
 }
