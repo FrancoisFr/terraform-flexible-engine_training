@@ -14,14 +14,15 @@ variable "cluster_flavor" { default = "cce.s1.small" }
 variable "availability_zone" { default = "eu-west-0a" }
 variable "ssh_key" { default = "key-as" }
 variable "sec_group_id" {
-  default = "40ff52d9-a9f3-4ca1-863e-644220d59af3"
+  default = "211501a6-8ee2-461e-866c-cfafa1b9965c"
 }
-variable "vpc_id" {
-  default = "7f9ff1db-9bcdb-4b6e-a5a0-024683ba48d0"
+variable "vpc-id" {
+  default = "7f9ff1db-9bdb-4b6e-a5a0-024683ba48d0" 
 }
 variable "subnet_id" {
   default = "1d3473f8-2bc5-4af3-ae3b-7a2ccc80fae1"
 }
 variable "db_password" {
-  default = "test"
+  default = "^bkpWUO3Ha8qEFbvm%mf"
 }
+ 
